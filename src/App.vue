@@ -16,6 +16,8 @@ import vMainWrapper from './components/v-main-wrapper.vue';
 </script>
 
 <style scoped>
+@import "materialize-css/dist/css/materialize.min.css";
+
 header {
   line-height: 1.5;
   max-height: 100vh;

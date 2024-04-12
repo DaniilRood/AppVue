@@ -1,12 +1,26 @@
+import VCatalog from '@/components/v-catalog.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
+
+import VCart from '@/components/v-cart.vue';
 const routes = [
   
 ]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: []
+  routes: [{
+    path: '/',
+    name: 'catalog',
+    component: VCatalog
+  },
+  {
+    path: '/cart',
+    name: 'cart',
+    component: VCart,
+    props: true
+
+  }]
   
 })
 
